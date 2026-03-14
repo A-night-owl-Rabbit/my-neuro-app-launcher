@@ -1,0 +1,19 @@
+{
+  "name": "my-neuro-app-launcher",
+  "version": "1.0.0",
+  "description": "App Launcher FC tool for my-neuro",
+  "main": "app_launcher.js",
+  "scripts": {
+    "install-deps": "npm install"
+  },
+  "dependencies": {
+    "iconv-lite": "^0.7.0"
+  },
+  "keywords": [
+    "my-neuro",
+    "fc-tool",
+    "app-launcher"
+  ],
+  "author": "爱熬夜的人形兔",
+  "license": "ISC"
+}
