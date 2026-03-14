@@ -13,9 +13,8 @@
  * - 应用名称匹配不区分大小写
  * - 正确处理中文路径和中文应用名称
  * 
- * --- 依赖安装 ---
- * 在本目录运行: npm install
- * 或手动安装: npm install iconv-lite
+ * --- 依赖 ---
+ * iconv-lite 已内置于 node_modules，开箱即用，无需额外安装
  * 
  * --- 配置文件 ---
  * apps.json: 存储应用名称与路径的映射，首次运行自动生成
@@ -25,7 +24,7 @@ const fs = require('fs').promises;
 const path = require('path');
 const { spawn, exec } = require('child_process');
 const { promisify } = require('util');
-const iconv = require('iconv-lite');
+const iconv = require(path.join(__dirname, 'node_modules', 'iconv-lite'));
 const execAsync = promisify(exec);
 
 // 配置文件名

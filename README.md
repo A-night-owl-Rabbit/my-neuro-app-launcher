@@ -4,9 +4,8 @@
 
 ## 快速开始
 
-1. 将 `app_launcher.js` 放入 `live-2d/server-tools/` 目录
-2. 在该目录下运行 `npm install iconv-lite`
-3. 重启 my-neuro，工具会自动加载
+1. 将整个仓库文件夹放入 `live-2d/server-tools/` 目录（依赖已内置，无需 `npm install`）
+2. 重启 my-neuro，工具会自动加载
 
 ## 功能说明
 
@@ -31,4 +30,4 @@
 
 ## 依赖
 
-- [iconv-lite](https://www.npmjs.com/package/iconv-lite) — 处理中文编码
+- [iconv-lite](https://www.npmjs.com/package/iconv-lite) — 处理中文编码（已内置，开箱即用）
